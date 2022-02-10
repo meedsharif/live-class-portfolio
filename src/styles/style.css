@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; 
+  /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffbe76, #f0932b);
+  padding: 7rem;
+}
+
+.wrapper {
+  background-color: #F8F7F1;
+  border-radius: 3rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.nav .logo {
+  width: 9rem;
+} 
+
+.nav .logo img {
+  width: 100%;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #202020;
+  padding: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.links li a:hover {
+  color: #286F6C;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tel .number a{
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #202020;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+.tel .phone-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #286F6C;
+
+}
+
+.tel .phone-icon svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../assets/bg-banner.png") no-repeat bottom center;
+  background-size: 50rem;
+}
+
+.container {
+  max-width: 140rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.top-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-headers h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  color: #0D2F3F;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.top-headers h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #525151;
+  line-height: 1.9;
+  width: 30rem;
+}
+
+.middle {
+  color: #F2613D;
+  font-size: 2rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.exp .number {
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.exp .years {
+  display: inline-block;
+  width: 1rem;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.bottom .cert {
+  width: 20rem;
+}
+
+.cert img {
+  width: 100%;
+}

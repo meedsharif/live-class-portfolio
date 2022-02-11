@@ -268,3 +268,94 @@ header {
   color: var(--font-primary);
   line-height: 1.3;
 }
+
+.experience .container {
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.experience h1 {
+  font-size: 5.4rem;
+  color: var(--font-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 4rem;
+}
+
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 3px dashed rgba(0, 0, 0, 0.3);
+  width: 4px;
+  height: 100%;
+}
+
+.timeline .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+}
+
+.timeline .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1.5rem);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  z-index: 100;
+  outline: 1px dashed rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+}
+
+.timeline .item .right {
+  /* padding: 2rem; */
+  margin-left: 8rem;
+  margin-top: -1rem;
+  line-height: 1.8;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.timeline .left, .timeline .right {
+  width: 50%;
+}
+
+.timeline .item h4 {
+
+  font-size: 3rem;
+  /* line-height: 1.9; */
+  color: var(--font-primary);
+}
+
+.item .left span {
+  font-size: 1.8rem;
+  /* font-weight: 600; */
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+.item.green::after {
+  background-color: #286F6C;
+}
+
+.item.yellow::after {
+  background-color: #EDBF48;
+}
+
+.item.orange::after {
+  background-color: #EF6340;
+}
